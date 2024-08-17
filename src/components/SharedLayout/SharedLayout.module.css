@@ -1,0 +1,198 @@
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.liloWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header {
+  background-color: #007bb5; /* Темно-синий цвет */
+  box-shadow: 0 1px 4px #005f99; /* Темно-синяя тень */
+  width: 100%;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: 600;
+  color: white; /* Белый цвет для логотипа */
+}
+
+a {
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #e0f7fa; /* Светло-синий цвет текста */
+  font-weight: 500;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 8px 0;
+  background-color: #007bb5; /* Темно-синий цвет */
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 8px 0;
+}
+
+.navWrapper button {
+  position: absolute;
+  left: 81%;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #e0f7fa; /* Светло-синий фон */
+  transition: transform 0.2s ease-in-out;
+}
+
+.navWrapper button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: white;
+  background-color: #005f99; /* Темно-синий цвет при наведении */
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLink::after,
+.active::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #e0f7fa; /* Светло-синий цвет */
+}
+
+.active::after {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.navForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  min-height: 280px;
+  padding: 20px 25px;
+  border: 1px solid #007bb5; /* Темно-синий цвет */
+  background-color: #e0f7fa; /* Светло-синий фон */
+  border-radius: 8px;
+}
+
+.navDiv,
+.navForm input {
+  width: 100%;
+}
+
+.navForm input {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #007bb5; /* Темно-синий цвет */
+  font-size: 14px;
+  background-color: #e0f7fa; /* Светло-синий фон */
+}
+
+.navForm input:focus {
+  outline-color: #007bb5; /* Темно-синий цвет */
+}
+
+.navForm button {
+  padding: 10px 30px;
+  border: 1px solid #007bb5; /* Темно-синий цвет */
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: #e0f7fa; /* Светло-синий фон */
+  color: #007bb5; /* Темно-синий цвет текста */
+  transition: transform 0.2s ease-in-out;
+}
+
+.navForm button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #005f99; /* Темно-синий цвет при наведении */
+  color: white;
+  font-weight: 500;
+}
+
+.onFocus {
+  top: -10px !important;
+  transition: all 150ms;
+  font-size: 18px;
+  color: #007bb5 !important; /* Темно-синий цвет текста */
+  background-color: #e0f7fa; /* Светло-синий фон */
+  padding: 0 10px;
+}
+
+.navForm span a {
+  padding: 0 0 5px 0;
+  color: black; /* Черный цвет ссылок */
+}
+
+.navForm span a:hover {
+  padding: 0 0 5px 0;
+  color: black;
+}
+
+.navDiv {
+  position: relative;
+}
+
+.navDiv label {
+  top: 10px;
+  left: 35px;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+  transition: all 150ms;
+  cursor: text;
+  font-size: 14px;
+}
+
+.navDiv svg {
+  position: absolute;
+  top: 3px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.navIcon svg {
+  width: 20px;
+  height: 20px;
+  color: #007bb5; /* Темно-синий цвет иконок */
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
